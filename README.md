@@ -1,2 +1,2 @@
 # AndroDesign
-AndroDesign is a wrapper for Android design library
+AndroDesign is a wrapper for Android design library which makes it more powerfull
