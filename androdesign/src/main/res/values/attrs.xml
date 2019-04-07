@@ -1,0 +1,26 @@
+<resources>
+	
+	<declare-styleable name="SplitPaneLayout">
+		
+		<attr name="orientation">
+			<enum name="horizontal" value="1" />
+			<enum name="vertical" value="0" />
+		</attr>
+		
+		<attr name="splitterSize" format="dimension" />
+		<attr name="splitterMovable" format="boolean" />
+		<attr name="splitterPosition" format="dimension|fraction" />
+		<attr name="splitterBackground" format="reference|color" />
+		<attr name="splitterDraggingBackground" format="reference|color" />
+		
+	</declare-styleable>
+	
+	<declare-styleable name="TextView">
+		
+		<attr name="textAppearance" />
+		<attr name="gravity" />
+		<attr name="textSelectable" />
+	
+	</declare-styleable>
+
+</resources>

@@ -1,0 +1,41 @@
+  apply plugin: 'com.android.library'
+  
+  android {
+    
+    compileSdkVersion 28
+    
+    defaultConfig {
+      
+      minSdkVersion 14
+      versionName project.property ('versionName')
+      
+    }
+    
+    buildTypes {
+      
+      debug {
+        consumerProguardFiles 'proguard-rules.pro'
+      }
+      
+      release {
+        consumerProguardFiles 'proguard-rules.pro'
+      }
+      
+    }
+    
+  }
+  
+  apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/bintray.gradle'
+  apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/publish.gradle'
+  
+  dependencies {
+    
+    implementation fileTree (include: ['*.jar'], dir: 'libs')
+    
+    api 'com.android.support:design:28.0.0'
+    api 'com.android.support:cardview-v7:28.0.0'
+    api 'com.github.clans:fab:1.6.4'
+    api project (':storage')
+    implementation 'com.larswerkman:HoloColorPicker:1.5'
+    
+  }

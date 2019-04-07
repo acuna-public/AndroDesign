@@ -1,0 +1,17 @@
+<android.support.design.widget.AppBarLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+	
+	<include layout="@layout/toolbar_title" />
+	
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="3dp"
+		android:background="?attr/colorHolo"
+		android:visibility="gone"
+		/>
+
+</android.support.design.widget.AppBarLayout>

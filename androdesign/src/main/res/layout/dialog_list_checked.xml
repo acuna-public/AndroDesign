@@ -1,0 +1,17 @@
+<CheckedTextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/text1"
+	android:layout_width="match_parent"
+	android:layout_height="50dp"
+	android:checkMark="?android:attr/listChoiceIndicatorSingle"
+	android:ellipsize="end"
+	android:maxLines="1"
+	android:foreground="?android:attr/selectableItemBackground"
+	android:gravity="center_vertical"
+	android:minHeight="?android:attr/listPreferredItemHeight"
+	android:paddingEnd="15dp"
+	android:paddingLeft="14dp"
+	android:paddingRight="15dp"
+	android:paddingStart="14dp"
+	android:textAppearance="@style/DialogText"
+	/>
