@@ -3,8 +3,6 @@
 	 Created by Acuna on 26.01.2019
 	*/
 	
-	// https://stackoverflow.com/questions/37236003/grid-view-with-fixed-width-and-responsive-height-android
-	
 	import android.content.Context;
 	import android.support.v7.widget.AppCompatImageView;
 	import android.util.AttributeSet;
