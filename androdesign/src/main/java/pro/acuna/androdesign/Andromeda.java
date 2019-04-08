@@ -509,7 +509,7 @@
 		public int dialogStyle () {
 			
 			if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT)
-				return (theme.equals ("Light") ? R.style.DialogLight : R.style.DialogDark);
+				return (theme.equals ("Light") ? R.style.DialogLight : R.style.DialogDark); // TODO Make transparent not in AndroDesign
 			else
 				return (theme.equals ("Light") ? R.style.TransparentDialogLight : R.style.TransparentDialogDark);
 			
@@ -803,16 +803,12 @@
 		
 		public String getRemoteApps (String packagesFile, String packagesLocalFile) throws JSONException, HttpRequestException, Archiver.DecompressException, OutOfMemoryException { // Получаем Packages.gz из репозитория
 			
-			String content;
-			
 			if (!offline) {
 				
 				HttpRequest httpConn = Net.request (packagesFile, userAgent);
-				content = httpConn.getContent ();
+				return httpConn.getContent ();
 				
-			} else content = Archiver.decompress (packagesLocalFile);
-			
-			return content;
+			} else return Archiver.decompress (packagesLocalFile);
 			
 		}
 		
