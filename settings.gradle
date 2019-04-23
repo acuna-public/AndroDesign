@@ -1,8 +1,8 @@
-  include ':androdesign', ':jtar', ':json', ':jabadaba', ':andromeda', ':archiver', ':storage'
+  include ':androdesign'//, ':jtar', ':json', ':jabadaba', ':andromeda', ':archiver', ':storage'
   
-  project (':jtar').projectDir = new File ('C:\\Projects\\AndroidStudio\\[Side]\\jTar\\jtar')
+  /*project (':jtar').projectDir = new File ('C:\\Projects\\AndroidStudio\\[Side]\\jTar\\jtar')
   project (':json').projectDir = new File ('C:\\Projects\\AndroidStudio\\[Side]\\JSON\\json')
   project (':jabadaba').projectDir = new File ('C:\\Projects\\AndroidStudio\\JabaDaba\\jabadaba')
   project (':andromeda').projectDir = new File ('C:\\Projects\\AndroidStudio\\Andromeda\\andromeda')
   project (':archiver').projectDir = new File ('C:\\Projects\\AndroidStudio\\Archiver\\archiver')
-  project (':storage').projectDir = new File ('C:\\Projects\\AndroidStudio\\Storage\\storage')
+  project (':storage').projectDir = new File ('C:\\Projects\\AndroidStudio\\Storage\\storage')*/
