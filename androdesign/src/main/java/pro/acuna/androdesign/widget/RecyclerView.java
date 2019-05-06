@@ -4,7 +4,8 @@
 	*/
 	
 	import android.content.Context;
-	import android.util.AttributeSet;
+  import android.support.annotation.NonNull;
+  import android.util.AttributeSet;
 	import android.view.View;
 	
 	public class RecyclerView extends android.support.v7.widget.RecyclerView {
@@ -49,12 +50,12 @@
 			addOnScrollListener (new android.support.v7.widget.RecyclerView.OnScrollListener () {
 				
 				@Override
-				public void onScrolled (android.support.v7.widget.RecyclerView recyclerView, int dx, int dy) {
+				public void onScrolled (@NonNull android.support.v7.widget.RecyclerView recyclerView, int dx, int dy) {
 					if (dy > 0) loading = true;
 				}
 				
 				@Override
-				public void onScrollStateChanged (android.support.v7.widget.RecyclerView recyclerView, int scrollState) {
+				public void onScrollStateChanged (@NonNull android.support.v7.widget.RecyclerView recyclerView, int scrollState) {
 					
 					if (loading && !recyclerView.canScrollVertically (1)) {
 						

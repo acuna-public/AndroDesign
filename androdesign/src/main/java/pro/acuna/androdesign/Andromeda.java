@@ -12,7 +12,6 @@
 	import android.support.v4.app.ActivityCompat;
 	import android.support.v4.content.ContextCompat;
 	import android.support.v7.widget.LinearLayoutManager;
-	import android.support.v7.widget.RecyclerView;
 	import android.view.View;
 	import android.widget.EditText;
 	import android.widget.TextView;
@@ -31,8 +30,9 @@
 	import java.util.LinkedHashMap;
 	import java.util.List;
 	import java.util.Map;
-	
-	import pro.acuna.andromeda.AsyncTaskLoading;
+  
+  import pro.acuna.androdesign.widget.RecyclerView;
+  import pro.acuna.andromeda.AsyncTaskLoading;
 	import pro.acuna.androdesign.widget.DividerItemDecoration;
 	import pro.acuna.androdesign.widget.Toolbar;
 	import pro.acuna.andromeda.AppsManager;
@@ -162,7 +162,8 @@
 			isStorageSDCard = storageType.equals (sdcard);
 			
 			theme = prefs.get (PREF_THEME, THEME_LIGHT);
-			isThemeHolo = theme.equals (THEME_HOLO_DARK);
+			
+      isThemeHolo = theme.equals (THEME_HOLO_DARK);
 			
 			prefBoolValues.put (PREF_ROOT, isRoot);
 			prefBoolValues.put (PREF_ONLY_WIFI, true);
@@ -180,9 +181,9 @@
 			}
 			
 			updated = (prefs.getInt (PREF_VERSION) != app.versionCode);
-			
-		}
-		
+    
+    }
+    
 		public Andromeda init (Activity activity) {
 			
 			this.activity = activity;
@@ -196,7 +197,7 @@
 				themes.put (THEME_TERMINAL, R.style.Terminal);
 				themes.put (THEME_HOLO_DARK, R.style.HoloDark);
 				
-				activity.setTheme (themes.get (theme));
+				setTheme (theme);
 				
 			}
 			
@@ -221,9 +222,14 @@
 			
 		}
 		
-		public void setTheme (String theme) {
+		public void setTheme (String theme) { // TODO: Check others
+		 
 			activity.setTheme (themes.get (theme));
-		}
+      prefs.set (PREF_THEME, theme);
+      
+      this.theme = theme;
+      
+    }
 		
 		String[] getLangTitles () {
 			

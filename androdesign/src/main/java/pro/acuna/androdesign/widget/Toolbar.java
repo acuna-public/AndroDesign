@@ -229,8 +229,12 @@
 			
 			if (set) {
 				
-				actionBar.setDisplayHomeAsUpEnabled (true);
-				actionBar.setHomeButtonEnabled (true);
+			  if (actionBar != null) {
+          
+          actionBar.setDisplayHomeAsUpEnabled (true);
+          actionBar.setHomeButtonEnabled (true);
+          
+        } else throw new NullPointerException ("getSupportActionBar () method returns null, be sure to add init (R.id.toolbar) method first");
 				
 			}
 			

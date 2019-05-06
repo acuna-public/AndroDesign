@@ -36,6 +36,7 @@
     api 'com.android.support:cardview-v7:28.0.0'
     api 'com.github.clans:fab:1.6.4'
 		api 'pro.acuna:storage:+'
+    //api project (':storage')
     implementation 'com.larswerkman:HoloColorPicker:1.5'
     
   }
