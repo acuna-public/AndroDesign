@@ -7,21 +7,21 @@ android:orientation="horizontal"
 android:foreground="?android:attr/selectableItemBackground"
 android:padding="10dp"
 >
-	
-	<CheckBox
-	android:id="@+id/checkbox"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:paddingRight="9dp"
-	android:layout_gravity="center_vertical"
-	/>
-	
-	<TextView
-	android:id="@+id/title"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:gravity="start|center_vertical"
-	android:textAppearance="@style/DialogText"
-	/>
+  
+  <CheckBox
+  android:id="@+id/checkbox"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:paddingRight="9dp"
+  android:layout_gravity="center_vertical"
+  />
+  
+  <TextView
+  android:id="@+id/title"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="start|center_vertical"
+  android:textAppearance="@style/DialogText"
+  />
 
 </LinearLayout>

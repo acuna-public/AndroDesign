@@ -1,339 +1,339 @@
 <resources>
-	
-	<style name="Light" parent="Theme.AppCompat.Light">
-		
-		<item name="windowNoTitle">true</item>
-		<item name="android:actionBarWidgetTheme">@style/Theme.MyTheme.Widget</item>
-		<item name="popupTheme">@style/PopupStyle</item>
-		<item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
-		<item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
-		<item name="android:textColorSecondary">@android:color/darker_gray</item>
-		<item name="autoCompleteTextViewStyle">@style/Search</item>
-		<item name="colorPrimary">@color/primary</item>
-		<item name="colorPrimaryDark">@color/primary_dark</item>
-		<item name="colorSearchHint">@color/search</item>
-		<item name="colorSection">@color/primary</item>
-		<item name="colorAccent">@color/primary</item>
-		<item name="colorTitle">@android:color/black</item>
-		<item name="colorDescr">@color/gray</item>
-		<item name="colorDescrGray">@android:color/darker_gray</item>
-		<item name="colorInputText">@color/gray</item>
-		<item name="colorToolbarText">@android:color/white</item>
-		<item name="colorPopup">@color/gray</item>
-		<item name="colorPopupBackground">@android:color/white</item>
-		<item name="colorShadow">@android:color/darker_gray</item>
-		<item name="android:windowBackground">@android:color/white</item>
-		<item name="colorCard">@android:color/white</item>
-		<item name="colorCardTitle">@android:color/black</item>
-		<item name="colorFab">@color/primary</item>
-		<item name="colorFabPressed">@color/primary_dark</item>
-		<item name="colorFabTint">@android:color/white</item>
-		<item name="colorError">@color/red</item>
-		<item name="colorButtonText">@android:color/black</item>
-		<item name="colorButtonTextInactive">@android:color/white</item>
-		<item name="colorButtonBackground">@color/light_gray</item>
-		<item name="actionBarTabStyle">@style/TabLayout</item>
-		<item name="colorHolo">@android:color/white</item>
-		<item name="sizeToolbarSelector">2dp</item>
-		<item name="android:actionMenuTextAppearance">@style/ToolbarItem</item>
-		<item name="actionMenuTextColor">?attr/colorToolbarText</item>
-		
-		<item name="textTitleSize">@dimen/title</item>
-		<item name="textSectionSize">@dimen/descr</item>
-		<item name="textDescrSize">@dimen/descr</item>
-		<item name="textViewSize">@dimen/descr</item>
-		
-	</style>
-	
-	<style name="Dark" parent="Theme.AppCompat.DayNight">
-		
-		<item name="windowNoTitle">true</item>
-		<item name="popupTheme">@style/PopupStyle</item>
-		<item name="popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
-		<item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
-		<item name="android:textColorPrimary">@android:color/darker_gray</item>
-		<item name="android:textColorSecondary">@android:color/darker_gray</item>
-		<item name="autoCompleteTextViewStyle">@style/Search</item>
-		<item name="colorPrimary">@color/primary</item>
-		<item name="colorPrimaryDark">@color/primary_dark</item>
-		<item name="colorSearchHint">@color/search</item>
-		<item name="colorSection">@color/primary</item>
-		<item name="colorAccent">@color/primary</item>
-		<item name="colorTitle">@android:color/darker_gray</item>
-		<item name="colorDescr">@android:color/darker_gray</item>
-		<item name="colorDescrGray">@android:color/darker_gray</item>
-		<item name="colorInputText">@android:color/darker_gray</item>
-		<item name="colorToolbarText">@android:color/white</item>
-		<item name="colorPopup">@android:color/darker_gray</item>
-		<item name="colorPopupBackground">@color/gray</item>
-		<item name="colorShadow">@android:color/darker_gray</item>
-		<item name="android:windowBackground">@color/gray</item>
-		<item name="colorCard">@color/gray</item>
-		<item name="colorCardTitle">@android:color/darker_gray</item>
-		<item name="colorFab">@color/primary</item>
-		<item name="colorFabPressed">@color/primary_dark</item>
-		<item name="colorFabTint">@android:color/white</item>
-		<item name="colorError">@color/red</item>
-		<item name="colorButtonText">@color/gray</item>
-		<item name="colorButtonTextInactive">@android:color/white</item>
-		<item name="colorButtonBackground">@android:color/darker_gray</item>
-		<item name="actionBarTabStyle">@style/TabLayout</item>
-		<item name="colorHolo">@android:color/white</item>
-		<item name="sizeToolbarSelector">2dp</item>
-		<item name="android:actionMenuTextAppearance">@style/ToolbarItem</item>
-		
-		<item name="textTitleSize">@dimen/title</item>
-		<item name="textSectionSize">@dimen/descr</item>
-		<item name="textDescrSize">@dimen/descr</item>
-		<item name="textViewSize">@dimen/descr</item>
-	
-	</style>
-	
-	<style name="Terminal" parent="Theme.AppCompat.DayNight">
-		
-		<item name="windowNoTitle">true</item>
-		<item name="popupTheme">@style/PopupStyle</item>
-		<item name="popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
-		<item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
-		<item name="android:textColorPrimary">@color/terminal_green</item>
-		<item name="android:textColorSecondary">@color/terminal_green</item>
-		<item name="autoCompleteTextViewStyle">@style/Search</item>
-		<item name="colorPrimary">@color/dark</item>
-		<item name="colorPrimaryDark">@color/dark</item>
-		<item name="colorSearchHint">@color/search</item>
-		<item name="colorSection">@color/terminal_green</item>
-		<item name="colorAccent">@color/terminal_green</item>
-		<item name="colorTitle">@color/terminal_green</item>
-		<item name="colorDescr">@color/terminal_green</item>
-		<item name="colorDescrGray">@color/terminal_green</item>
-		<item name="colorInputText">@color/terminal_green</item>
-		<item name="colorToolbarText">@color/terminal_green</item>
-		<item name="colorPopup">@color/terminal_green</item>
-		<item name="colorPopupBackground">@color/dark</item>
-		<item name="colorShadow">@color/terminal_green</item>
-		<item name="android:windowBackground">@android:color/black</item>
-		<item name="colorCard">@color/dark</item>
-		<item name="colorCardTitle">@color/terminal_green</item>
-		<item name="colorFab">@color/terminal_green</item>
-		<item name="colorFabPressed">@color/terminal_green</item>
-		<item name="colorFabTint">@android:color/black</item>
-		<item name="colorError">@color/red</item>
-		<item name="colorButtonText">@color/terminal_green</item>
-		<item name="colorButtonTextInactive">@color/search</item>
-		<item name="colorButtonBackground">@color/gray</item>
-		<item name="actionBarTabStyle">@style/TabLayout</item>
-		<item name="colorHolo">@color/terminal_green</item>
-		<item name="sizeToolbarSelector">2dp</item>
-		
-		<item name="textTitleSize">@dimen/title</item>
-		<item name="textSectionSize">@dimen/descr</item>
-		<item name="textDescrSize">@dimen/descr</item>
-		<item name="textViewSize">@dimen/descr</item>
-	
-	</style>
-	
-	<style name="HoloDark" parent="Theme.AppCompat.DayNight">
-		
-		<item name="windowNoTitle">true</item>
-		<item name="popupTheme">@style/PopupStyle</item>
-		<item name="popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
-		<item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
-		<item name="android:textColorPrimary">@android:color/white</item>
-		<item name="android:textColorSecondary">@android:color/holo_blue_dark</item>
-		<item name="autoCompleteTextViewStyle">@style/Search</item>
-		<item name="colorPrimary">@android:color/black</item>
-		<item name="colorPrimaryDark">@android:color/black</item>
-		<item name="colorSearchHint">@color/search</item>
-		<item name="colorSection">@android:color/white</item>
-		<item name="colorAccent">@android:color/white</item>
-		<item name="colorTitle">@android:color/white</item>
-		<item name="colorDescr">@android:color/white</item>
-		<item name="colorDescrGray">@android:color/white</item>
-		<item name="colorInputText">@android:color/white</item>
-		<item name="colorToolbarText">@android:color/white</item>
-		<item name="colorPopup">@android:color/white</item>
-		<item name="colorPopupBackground">@color/gray</item>
-		<item name="colorShadow">@android:color/white</item>
-		<item name="android:windowBackground">@android:color/black</item>
-		<item name="colorCard">@color/holo_dark</item>
-		<item name="colorCardTitle">@android:color/white</item>
-		<item name="colorFab">@android:color/holo_blue_dark</item>
-		<item name="colorFabPressed">@android:color/holo_blue_dark</item>
-		<item name="colorFabTint">@android:color/white</item>
-		<item name="colorError">@color/red</item>
-		<item name="colorButtonText">@android:color/white</item>
-		<item name="colorButtonTextInactive">@color/search</item>
-		<item name="colorButtonBackground">@color/gray</item>
-		<item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_dark</item>
-		<item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_dark</item>
-		<item name="colorHolo">@android:color/holo_blue_dark</item>
-		<item name="sizeToolbarSelector">6dp</item>
-		
-		<item name="textTitleSize">18sp</item>
-		<item name="textSectionSize">16sp</item>
-		<item name="textDescrSize">16sp</item>
-		<item name="textViewSize">16sp</item>
-	
-	</style>
-	
-	<style name="Search" parent="Widget.AppCompat.AutoCompleteTextView">
-		<item name="android:textColor">?attr/colorToolbarText</item>
-		<item name="android:textColorHint">?attr/colorSearchHint</item>
-	</style>
-	
-	<style name="Theme.MyTheme.Widget" parent="@android:style/Theme.Holo">
-		<item name="android:textColor">@android:color/white</item>
-	</style>
-	
-	<style name="ToolbarItem" parent="@android:style/Widget.TextView">
-		<item name="android:textSize">18sp</item>
-		<item name="android:textColor">?attr/colorToolbarText</item>
-	</style>
-	
-	<style name="Toolbar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
-		
-		<item name="editTextColor">@color/search</item>
-		<item name="android:textColorHint">@color/search</item>
-		<item name="android:textSize">18sp</item>
-		<item name="colorControlNormal">?attr/colorToolbarText</item>
-		<item name="android:textColor">?attr/colorToolbarText</item>
-		
-		<item name="android:singleLine">true</item>
-		<item name="android:ellipsize">end</item>
-		
-	</style>
-	
-	<style name="ToolbarDescr">
-		<item name="android:textSize">?attr/textDescrSize</item>
-		<item name="android:textColor">?attr/colorToolbarText</item>
-	</style>
-	
-	<style name="TabLayout" parent="Widget.Design.TabLayout">
-		<item name="tabTextColor">?attr/colorToolbarText</item>
-		<item name="tabSelectedTextColor">?attr/colorToolbarText</item>
-		<item name="tabTextAppearance">@style/TabText</item>
-		<item name="tabIndicatorColor">?attr/colorHolo</item>
-		<item name="tabIndicatorHeight">?attr/sizeToolbarSelector</item>
-	</style>
-	
-	<style name="TabText" parent="TextAppearance.AppCompat.Button">
-		<item name="android:textSize">@dimen/descr</item>
-	</style>
-	
-	<style name="PopupStyle" parent="Theme.AppCompat.Light">
-		<item name="android:colorBackground">?attr/colorPopupBackground</item>
-		<item name="android:textColor">?attr/colorPopup</item>
-	</style>
-	
-	<style name="PopupMenuStyle" parent="Theme.AppCompat.Light">
-		<item name="android:popupBackground">?attr/colorPopupBackground</item>
-		<item name="android:textColor">?attr/colorPopup</item>
-	</style>
-	
-	<style name="PopupMenuTextSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
-		<item name="android:textColor">?attr/colorPopup</item>
-	</style>
-	
-	<style name="PopupMenuTextLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
-		<item name="android:textColor">?attr/colorPopup</item>
-	</style>
-	
-	<style name="DialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
-		<item name="android:colorBackgroundCacheHint">@null</item>
-	</style>
-	
-	<style name="TransparentDialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
-		<item name="android:colorBackgroundCacheHint">@null</item>
-		<item name="android:windowBackground">@android:color/transparent</item>
-	</style>
-	
-	<style name="DialogDark" parent="Theme.AppCompat.Dialog.Alert">
-		<item name="android:colorBackgroundCacheHint">@null</item>
-		<item name="android:background">?attr/colorPopupBackground</item>
-	</style>
-	
-	<style name="TransparentDialogDark" parent="Theme.AppCompat.Dialog.Alert">
-		<item name="android:colorBackgroundCacheHint">@null</item>
-		<item name="android:windowBackground">@android:color/transparent</item>
-	</style>
-	
-	<style name="DialogText">
-		<item name="android:textSize">@dimen/title</item>
-		<item name="android:textColor">?attr/colorPopup</item>
-	</style>
-	
-	<style name="TextTitle">
-		<item name="android:textSize">?attr/textTitleSize</item>
-		<item name="android:textColor">?attr/colorTitle</item>
-	</style>
-	
-	<style name="TextOptionTitle">
-		<item name="android:textSize">?attr/textSectionSize</item>
-		<item name="android:textColor">?attr/colorDescr</item>
-	</style>
-	
-	<style name="TextDescr">
-		<item name="android:textSize">?attr/textDescrSize</item>
-		<item name="android:textColor">?attr/colorDescr</item>
-	</style>
-	
-	<style name="TextDescrGray">
-		<item name="android:textSize">?attr/textDescrSize</item>
-		<item name="android:textColor">?attr/colorDescrGray</item>
-	</style>
-	
-	<style name="TextEmpty">
-		<item name="android:textSize">@dimen/descr</item>
-		<item name="android:textColor">?attr/colorShadow</item>
-	</style>
-	
-	<style name="TextSection">
-		<item name="android:textSize">?attr/textSectionSize</item>
-		<item name="android:textColor">?attr/colorSection</item>
-	</style>
-	
-	<style name="TextOption">
-		<item name="android:textSize">11sp</item>
-		<item name="android:textColor">?attr/colorDescr</item>
-	</style>
-	
-	<style name="TextConsole">
-		<item name="android:textSize">15sp</item>
-		<item name="android:textColor">?attr/colorTitle</item>
-	</style>
-	
-	<style name="TextView">
-		<item name="android:textSize">?attr/textViewSize</item>
-		<item name="android:textColor">?attr/colorTitle</item>
-	</style>
-	
-	<style name="TextSearch">
-		<item name="android:textColor">?attr/colorFab</item>
-	</style>
-	
-	<style name="TextInput">
-		<item name="android:textSize">16sp</item>
-		<item name="android:textColor">?attr/colorInputText</item>
-	</style>
-	
-	<style name="TextError">
-		<item name="android:textSize">13sp</item>
-		<item name="android:textColor">?attr/colorError</item>
-	</style>
-	
-	<style name="NavigationDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
-		<item name="android:textColor">?attr/colorPopup</item>
-	</style>
-	
-	<style name="CollapsingToolbarLayoutExpandedTextStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
-		<item name="android:textColor">@android:color/transparent</item>
-		<item name="android:textSize">0sp</item>
-	</style>
-	
+  
+  <style name="Light" parent="Theme.AppCompat.Light">
+    
+    <item name="windowNoTitle">true</item>
+    <item name="android:actionBarWidgetTheme">@style/Theme.MyTheme.Widget</item>
+    <item name="popupTheme">@style/PopupStyle</item>
+    <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
+    <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
+    <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    <item name="autoCompleteTextViewStyle">@style/Search</item>
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorSearchHint">@color/search</item>
+    <item name="colorSection">@color/primary</item>
+    <item name="colorAccent">@color/primary</item>
+    <item name="colorTitle">@android:color/black</item>
+    <item name="colorDescr">@color/gray</item>
+    <item name="colorDescrGray">@android:color/darker_gray</item>
+    <item name="colorInputText">@color/gray</item>
+    <item name="colorToolbarText">@android:color/white</item>
+    <item name="colorPopup">@color/gray</item>
+    <item name="colorPopupBackground">@android:color/white</item>
+    <item name="colorShadow">@android:color/darker_gray</item>
+    <item name="android:windowBackground">@android:color/white</item>
+    <item name="colorCard">@android:color/white</item>
+    <item name="colorCardTitle">@android:color/black</item>
+    <item name="colorFab">@color/primary</item>
+    <item name="colorFabPressed">@color/primary_dark</item>
+    <item name="colorFabTint">@android:color/white</item>
+    <item name="colorError">@color/red</item>
+    <item name="colorButtonText">@android:color/black</item>
+    <item name="colorButtonTextInactive">@android:color/white</item>
+    <item name="colorButtonBackground">@color/light_gray</item>
+    <item name="actionBarTabStyle">@style/TabLayout</item>
+    <item name="colorHolo">@android:color/white</item>
+    <item name="sizeToolbarSelector">2dp</item>
+    <item name="android:actionMenuTextAppearance">@style/ToolbarItem</item>
+    <item name="actionMenuTextColor">?attr/colorToolbarText</item>
+    
+    <item name="textTitleSize">@dimen/title</item>
+    <item name="textSectionSize">@dimen/descr</item>
+    <item name="textDescrSize">@dimen/descr</item>
+    <item name="textViewSize">@dimen/descr</item>
+    
+  </style>
+  
+  <style name="Dark" parent="Theme.AppCompat.DayNight">
+    
+    <item name="windowNoTitle">true</item>
+    <item name="popupTheme">@style/PopupStyle</item>
+    <item name="popupMenuStyle">@style/PopupMenuStyle</item>
+    <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
+    <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
+    <item name="android:textColorPrimary">@android:color/darker_gray</item>
+    <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    <item name="autoCompleteTextViewStyle">@style/Search</item>
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorSearchHint">@color/search</item>
+    <item name="colorSection">@color/primary</item>
+    <item name="colorAccent">@color/primary</item>
+    <item name="colorTitle">@android:color/darker_gray</item>
+    <item name="colorDescr">@android:color/darker_gray</item>
+    <item name="colorDescrGray">@android:color/darker_gray</item>
+    <item name="colorInputText">@android:color/darker_gray</item>
+    <item name="colorToolbarText">@android:color/white</item>
+    <item name="colorPopup">@android:color/darker_gray</item>
+    <item name="colorPopupBackground">@color/gray</item>
+    <item name="colorShadow">@android:color/darker_gray</item>
+    <item name="android:windowBackground">@color/gray</item>
+    <item name="colorCard">@color/gray</item>
+    <item name="colorCardTitle">@android:color/darker_gray</item>
+    <item name="colorFab">@color/primary</item>
+    <item name="colorFabPressed">@color/primary_dark</item>
+    <item name="colorFabTint">@android:color/white</item>
+    <item name="colorError">@color/red</item>
+    <item name="colorButtonText">@color/gray</item>
+    <item name="colorButtonTextInactive">@android:color/white</item>
+    <item name="colorButtonBackground">@android:color/darker_gray</item>
+    <item name="actionBarTabStyle">@style/TabLayout</item>
+    <item name="colorHolo">@android:color/white</item>
+    <item name="sizeToolbarSelector">2dp</item>
+    <item name="android:actionMenuTextAppearance">@style/ToolbarItem</item>
+    
+    <item name="textTitleSize">@dimen/title</item>
+    <item name="textSectionSize">@dimen/descr</item>
+    <item name="textDescrSize">@dimen/descr</item>
+    <item name="textViewSize">@dimen/descr</item>
+  
+  </style>
+  
+  <style name="Terminal" parent="Theme.AppCompat.DayNight">
+    
+    <item name="windowNoTitle">true</item>
+    <item name="popupTheme">@style/PopupStyle</item>
+    <item name="popupMenuStyle">@style/PopupMenuStyle</item>
+    <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
+    <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
+    <item name="android:textColorPrimary">@color/terminal_green</item>
+    <item name="android:textColorSecondary">@color/terminal_green</item>
+    <item name="autoCompleteTextViewStyle">@style/Search</item>
+    <item name="colorPrimary">@color/dark</item>
+    <item name="colorPrimaryDark">@color/dark</item>
+    <item name="colorSearchHint">@color/search</item>
+    <item name="colorSection">@color/terminal_green</item>
+    <item name="colorAccent">@color/terminal_green</item>
+    <item name="colorTitle">@color/terminal_green</item>
+    <item name="colorDescr">@color/terminal_green</item>
+    <item name="colorDescrGray">@color/terminal_green</item>
+    <item name="colorInputText">@color/terminal_green</item>
+    <item name="colorToolbarText">@color/terminal_green</item>
+    <item name="colorPopup">@color/terminal_green</item>
+    <item name="colorPopupBackground">@color/dark</item>
+    <item name="colorShadow">@color/terminal_green</item>
+    <item name="android:windowBackground">@android:color/black</item>
+    <item name="colorCard">@color/dark</item>
+    <item name="colorCardTitle">@color/terminal_green</item>
+    <item name="colorFab">@color/terminal_green</item>
+    <item name="colorFabPressed">@color/terminal_green</item>
+    <item name="colorFabTint">@android:color/black</item>
+    <item name="colorError">@color/red</item>
+    <item name="colorButtonText">@color/terminal_green</item>
+    <item name="colorButtonTextInactive">@color/search</item>
+    <item name="colorButtonBackground">@color/gray</item>
+    <item name="actionBarTabStyle">@style/TabLayout</item>
+    <item name="colorHolo">@color/terminal_green</item>
+    <item name="sizeToolbarSelector">2dp</item>
+    
+    <item name="textTitleSize">@dimen/title</item>
+    <item name="textSectionSize">@dimen/descr</item>
+    <item name="textDescrSize">@dimen/descr</item>
+    <item name="textViewSize">@dimen/descr</item>
+  
+  </style>
+  
+  <style name="HoloDark" parent="Theme.AppCompat.DayNight">
+    
+    <item name="windowNoTitle">true</item>
+    <item name="popupTheme">@style/PopupStyle</item>
+    <item name="popupMenuStyle">@style/PopupMenuStyle</item>
+    <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
+    <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <item name="android:textColorSecondary">@android:color/holo_blue_dark</item>
+    <item name="autoCompleteTextViewStyle">@style/Search</item>
+    <item name="colorPrimary">@android:color/black</item>
+    <item name="colorPrimaryDark">@android:color/black</item>
+    <item name="colorSearchHint">@color/search</item>
+    <item name="colorSection">@android:color/white</item>
+    <item name="colorAccent">@android:color/white</item>
+    <item name="colorTitle">@android:color/white</item>
+    <item name="colorDescr">@android:color/white</item>
+    <item name="colorDescrGray">@android:color/white</item>
+    <item name="colorInputText">@android:color/white</item>
+    <item name="colorToolbarText">@android:color/white</item>
+    <item name="colorPopup">@android:color/white</item>
+    <item name="colorPopupBackground">@color/gray</item>
+    <item name="colorShadow">@android:color/white</item>
+    <item name="android:windowBackground">@android:color/black</item>
+    <item name="colorCard">@color/holo_dark</item>
+    <item name="colorCardTitle">@android:color/white</item>
+    <item name="colorFab">@android:color/holo_blue_dark</item>
+    <item name="colorFabPressed">@android:color/holo_blue_dark</item>
+    <item name="colorFabTint">@android:color/white</item>
+    <item name="colorError">@color/red</item>
+    <item name="colorButtonText">@android:color/white</item>
+    <item name="colorButtonTextInactive">@color/search</item>
+    <item name="colorButtonBackground">@color/gray</item>
+    <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_dark</item>
+    <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_dark</item>
+    <item name="colorHolo">@android:color/holo_blue_dark</item>
+    <item name="sizeToolbarSelector">6dp</item>
+    
+    <item name="textTitleSize">18sp</item>
+    <item name="textSectionSize">16sp</item>
+    <item name="textDescrSize">16sp</item>
+    <item name="textViewSize">16sp</item>
+  
+  </style>
+  
+  <style name="Search" parent="Widget.AppCompat.AutoCompleteTextView">
+    <item name="android:textColor">?attr/colorToolbarText</item>
+    <item name="android:textColorHint">?attr/colorSearchHint</item>
+  </style>
+  
+  <style name="Theme.MyTheme.Widget" parent="@android:style/Theme.Holo">
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+  
+  <style name="ToolbarItem" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">?attr/colorToolbarText</item>
+  </style>
+  
+  <style name="Toolbar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+    
+    <item name="editTextColor">@color/search</item>
+    <item name="android:textColorHint">@color/search</item>
+    <item name="android:textSize">18sp</item>
+    <item name="colorControlNormal">?attr/colorToolbarText</item>
+    <item name="android:textColor">?attr/colorToolbarText</item>
+    
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    
+  </style>
+  
+  <style name="ToolbarDescr">
+    <item name="android:textSize">?attr/textDescrSize</item>
+    <item name="android:textColor">?attr/colorToolbarText</item>
+  </style>
+  
+  <style name="TabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabTextColor">?attr/colorToolbarText</item>
+    <item name="tabSelectedTextColor">?attr/colorToolbarText</item>
+    <item name="tabTextAppearance">@style/TabText</item>
+    <item name="tabIndicatorColor">?attr/colorHolo</item>
+    <item name="tabIndicatorHeight">?attr/sizeToolbarSelector</item>
+  </style>
+  
+  <style name="TabText" parent="TextAppearance.AppCompat.Button">
+    <item name="android:textSize">@dimen/descr</item>
+  </style>
+  
+  <style name="PopupStyle" parent="Theme.AppCompat.Light">
+    <item name="android:colorBackground">?attr/colorPopupBackground</item>
+    <item name="android:textColor">?attr/colorPopup</item>
+  </style>
+  
+  <style name="PopupMenuStyle" parent="Theme.AppCompat.Light">
+    <item name="android:popupBackground">?attr/colorPopupBackground</item>
+    <item name="android:textColor">?attr/colorPopup</item>
+  </style>
+  
+  <style name="PopupMenuTextSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+    <item name="android:textColor">?attr/colorPopup</item>
+  </style>
+  
+  <style name="PopupMenuTextLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+    <item name="android:textColor">?attr/colorPopup</item>
+  </style>
+  
+  <style name="DialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:colorBackgroundCacheHint">@null</item>
+  </style>
+  
+  <style name="TransparentDialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+  
+  <style name="DialogDark" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:background">?attr/colorPopupBackground</item>
+  </style>
+  
+  <style name="TransparentDialogDark" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+  
+  <style name="DialogText">
+    <item name="android:textSize">@dimen/title</item>
+    <item name="android:textColor">?attr/colorPopup</item>
+  </style>
+  
+  <style name="TextTitle">
+    <item name="android:textSize">?attr/textTitleSize</item>
+    <item name="android:textColor">?attr/colorTitle</item>
+  </style>
+  
+  <style name="TextOptionTitle">
+    <item name="android:textSize">?attr/textSectionSize</item>
+    <item name="android:textColor">?attr/colorDescr</item>
+  </style>
+  
+  <style name="TextDescr">
+    <item name="android:textSize">?attr/textDescrSize</item>
+    <item name="android:textColor">?attr/colorDescr</item>
+  </style>
+  
+  <style name="TextDescrGray">
+    <item name="android:textSize">?attr/textDescrSize</item>
+    <item name="android:textColor">?attr/colorDescrGray</item>
+  </style>
+  
+  <style name="TextEmpty">
+    <item name="android:textSize">@dimen/descr</item>
+    <item name="android:textColor">?attr/colorShadow</item>
+  </style>
+  
+  <style name="TextSection">
+    <item name="android:textSize">?attr/textSectionSize</item>
+    <item name="android:textColor">?attr/colorSection</item>
+  </style>
+  
+  <style name="TextOption">
+    <item name="android:textSize">11sp</item>
+    <item name="android:textColor">?attr/colorDescr</item>
+  </style>
+  
+  <style name="TextConsole">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textColor">?attr/colorTitle</item>
+  </style>
+  
+  <style name="TextView">
+    <item name="android:textSize">?attr/textViewSize</item>
+    <item name="android:textColor">?attr/colorTitle</item>
+  </style>
+  
+  <style name="TextSearch">
+    <item name="android:textColor">?attr/colorFab</item>
+  </style>
+  
+  <style name="TextInput">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">?attr/colorInputText</item>
+  </style>
+  
+  <style name="TextError">
+    <item name="android:textSize">13sp</item>
+    <item name="android:textColor">?attr/colorError</item>
+  </style>
+  
+  <style name="NavigationDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+    <item name="android:textColor">?attr/colorPopup</item>
+  </style>
+  
+  <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+    <item name="android:textColor">@android:color/transparent</item>
+    <item name="android:textSize">0sp</item>
+  </style>
+  
 </resources>

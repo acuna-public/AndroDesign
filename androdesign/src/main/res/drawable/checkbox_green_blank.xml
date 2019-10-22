@@ -1,23 +1,23 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-	
-	<item>
-		
-		<shape>
-			
-			<gradient
-			android:startColor="@color/green"
-			android:endColor="@color/green"
-			/>
-			
-			<stroke
-			android:color="@android:color/transparent"
-			android:width="15dp"
-			/>
-			
-			<corners android:radius="2dp" />
-			
-		</shape>
-		
-	</item>
-	
+  
+  <item>
+    
+    <shape>
+      
+      <gradient
+      android:startColor="@color/green"
+      android:endColor="@color/green"
+      />
+      
+      <stroke
+      android:color="@android:color/transparent"
+      android:width="15dp"
+      />
+      
+      <corners android:radius="2dp" />
+      
+    </shape>
+    
+  </item>
+  
 </selector>

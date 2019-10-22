@@ -1,30 +1,30 @@
 <resources>
-	
-	<attr name="colorTitle" format="reference|color" />
-	<attr name="colorDescr" format="reference|color" />
-	<attr name="colorDescrGray" format="reference|color" />
-	<attr name="colorInputText" format="reference|color" />
-	<attr name="colorToolbarText" format="reference|color" />
-	<attr name="colorPopupBackground" format="reference|color" />
-	<attr name="colorShadow" format="reference|color" />
-	<attr name="colorPopup" format="reference|color" />
-	<attr name="colorCardTitle" format="reference|color" />
-	<attr name="colorSection" format="reference|color" />
-	<attr name="colorCard" format="reference|color" />
-	<attr name="colorFab" format="reference|color" />
-	<attr name="colorFabPressed" format="reference|color" />
-	<attr name="colorFabTint" format="reference|color" />
-	<attr name="colorError" format="reference|color" />
-	<attr name="colorHolo" format="reference|color" />
-	<attr name="colorButtonText" format="reference|color" />
-	<attr name="colorButtonTextInactive" format="reference|color" />
-	<attr name="colorButtonBackground" format="reference|color" />
-	<attr name="textTitleSize" format="reference|dimension" />
-	<attr name="textSectionSize" format="reference|dimension" />
-	<attr name="textDescrSize" format="reference|dimension" />
-	<attr name="textViewSize" format="reference|dimension" />
-	<attr name="sizeToolbarSelector" format="reference|dimension" />
-	<attr name="listChoiceIndicatorSingle" format="reference" />
-	<attr name="colorSearchHint" format="reference|color" />
-	
+  
+  <attr name="colorTitle" format="reference|color" />
+  <attr name="colorDescr" format="reference|color" />
+  <attr name="colorDescrGray" format="reference|color" />
+  <attr name="colorInputText" format="reference|color" />
+  <attr name="colorToolbarText" format="reference|color" />
+  <attr name="colorPopupBackground" format="reference|color" />
+  <attr name="colorShadow" format="reference|color" />
+  <attr name="colorPopup" format="reference|color" />
+  <attr name="colorCardTitle" format="reference|color" />
+  <attr name="colorSection" format="reference|color" />
+  <attr name="colorCard" format="reference|color" />
+  <attr name="colorFab" format="reference|color" />
+  <attr name="colorFabPressed" format="reference|color" />
+  <attr name="colorFabTint" format="reference|color" />
+  <attr name="colorError" format="reference|color" />
+  <attr name="colorHolo" format="reference|color" />
+  <attr name="colorButtonText" format="reference|color" />
+  <attr name="colorButtonTextInactive" format="reference|color" />
+  <attr name="colorButtonBackground" format="reference|color" />
+  <attr name="textTitleSize" format="reference|dimension" />
+  <attr name="textSectionSize" format="reference|dimension" />
+  <attr name="textDescrSize" format="reference|dimension" />
+  <attr name="textViewSize" format="reference|dimension" />
+  <attr name="sizeToolbarSelector" format="reference|dimension" />
+  <attr name="listChoiceIndicatorSingle" format="reference" />
+  <attr name="colorSearchHint" format="reference|color" />
+  
 </resources>
