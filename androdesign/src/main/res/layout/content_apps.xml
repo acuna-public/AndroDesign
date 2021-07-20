@@ -7,7 +7,7 @@
   app:layout_behavior="@string/appbar_scrolling_view_behavior"
 >
   
-  <pro.acuna.androdesign.widget.RecyclerView
+  <ru.ointeractive.androdesign.widget.RecyclerView
     android:id="@+id/recycler_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

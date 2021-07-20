@@ -6,10 +6,12 @@
   <color name="dark">#161616</color>
   <color name="holo_dark">#171717</color>
   <color name="search">#80ffffff</color>
-  <color name="light_gray">#cccccc</color>
   <color name="red">#de0000</color>
   <color name="green">#4caf50</color>
   <color name="terminal_green">#33ff66</color>
+  <color name="black">@android:color/black</color>
   <color name="black_alpha_aa">#AA000000</color>
-  
+  <color name="gray_medium">#747474</color>
+	<color name="light_gray">#A5A5A5</color>
+ 
 </resources>

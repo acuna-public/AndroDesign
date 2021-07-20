@@ -6,7 +6,6 @@
   android:checkMark="?android:attr/listChoiceIndicatorSingle"
   android:ellipsize="end"
   android:maxLines="1"
-  android:foreground="?android:attr/selectableItemBackground"
   android:gravity="center_vertical"
   android:minHeight="?android:attr/listPreferredItemHeight"
   android:paddingEnd="15dp"

@@ -3,11 +3,13 @@
   <style name="Light" parent="Theme.AppCompat.Light">
     
     <item name="windowNoTitle">true</item>
+	  <item name="android:actionBarStyle">@style/Toolbar</item>
     <item name="android:actionBarWidgetTheme">@style/Theme.MyTheme.Widget</item>
     <item name="popupTheme">@style/PopupStyle</item>
     <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
     <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
-    <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <item name="android:textColorSecondary">@android:color/white</item>
     <item name="autoCompleteTextViewStyle">@style/Search</item>
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary_dark</item>
@@ -196,7 +198,7 @@
     <item name="android:textColor">?attr/colorToolbarText</item>
   </style>
   
-  <style name="Toolbar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+  <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
     
     <item name="editTextColor">@color/search</item>
     <item name="android:textColorHint">@color/search</item>
@@ -206,7 +208,10 @@
     
     <item name="android:singleLine">true</item>
     <item name="android:ellipsize">end</item>
-    
+	  
+    <item name="android:textColorPrimary">?attr/colorToolbarText</item>
+	  <item name="android:textColorSecondary">?attr/colorToolbarText</item>
+		
   </style>
   
   <style name="ToolbarDescr">
@@ -268,6 +273,10 @@
     <item name="android:textColor">?attr/colorPopup</item>
   </style>
   
+  <style name="Text" parent="DialogText">
+    <item name="android:textSize">17sp</item>
+  </style>
+  
   <style name="TextTitle">
     <item name="android:textSize">?attr/textTitleSize</item>
     <item name="android:textColor">?attr/colorTitle</item>
@@ -304,7 +313,7 @@
   </style>
   
   <style name="TextConsole">
-    <item name="android:textSize">15sp</item>
+    <item name="android:textSize">16sp</item>
     <item name="android:textColor">?attr/colorTitle</item>
   </style>
   

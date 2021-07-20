@@ -2,11 +2,11 @@
   
   android {
     
-    compileSdkVersion 28
+    compileSdkVersion 29
     
     defaultConfig {
       
-      minSdkVersion 14
+      minSdkVersion 11
       versionName project.property ('libraryVersion')
       
     }
@@ -24,19 +24,25 @@
     }
     
   }
-  
+	
   apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/bintray.gradle'
   apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/publish.gradle'
   
   dependencies {
     
     implementation fileTree (include: ['*.jar'], dir: 'libs')
-    
+		
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+    api 'com.android.support:appcompat-v7:28.0.0'
     api 'com.android.support:design:28.0.0'
     api 'com.android.support:cardview-v7:28.0.0'
+		
     api 'com.github.clans:fab:1.6.4'
-		api 'pro.acuna:storage:+'
-    //api project (':storage')
+		
     implementation 'com.larswerkman:HoloColorPicker:1.5'
-    
-  }
+	
+		//api 'ru.ointeractive:andromeda:+'
+		api project (':andromeda')
+		
+	}

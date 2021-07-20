@@ -26,5 +26,7 @@
   <attr name="sizeToolbarSelector" format="reference|dimension" />
   <attr name="listChoiceIndicatorSingle" format="reference" />
   <attr name="colorSearchHint" format="reference|color" />
+  <attr name="textAppearance" format="reference" />
+  <attr name="textSelectable" format="boolean" />
   
 </resources>

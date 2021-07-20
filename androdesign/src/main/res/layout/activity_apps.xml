@@ -23,7 +23,7 @@
       android:visibility="gone"
       />
     
-    <pro.acuna.androdesign.widget.TabLayout
+    <ru.ointeractive.androdesign.widget.TabLayout
       android:id="@+id/tab_layout"
       style="@style/TabLayout"
       android:layout_width="match_parent"
@@ -34,7 +34,7 @@
   
   </android.support.design.widget.AppBarLayout>
   
-  <pro.acuna.androdesign.widget.ViewPager
+  <ru.ointeractive.androdesign.widget.ViewPager
     android:id="@+id/view_pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
