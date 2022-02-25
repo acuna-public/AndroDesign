@@ -14,7 +14,7 @@
     <attr name="focusable" format="boolean" />
     <attr name="wrapSelector" format="boolean" />
 	  <attr name="enabled" format="boolean" />
-	  <attr name="android:text" />
+	  <attr name="text" format="string" />
 	  
   </declare-styleable>
 	
@@ -60,6 +60,8 @@
 		<attr name="src" format="integer" />
     <attr name="android:textAppearance" />
 		<attr name="android:textColor" />
+    <attr name="imageWidth" format="dimension" />
+    <attr name="imageHeight" format="dimension" />
 		
 	</declare-styleable>
 	
@@ -68,6 +70,10 @@
 	  <attr name="menu" format="reference" />
 	  <attr name="item_layout" format="reference" />
 	  
+  </declare-styleable>
+	
+  <declare-styleable name="Toolbar">
+	 
   </declare-styleable>
 	
 </resources>

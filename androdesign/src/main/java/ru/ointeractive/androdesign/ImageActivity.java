@@ -19,7 +19,7 @@
   import ru.ointeractive.androdesign.adapter.ImagesAdapter;
   import ru.ointeractive.androdesign.adapter.ViewPagerAdapter;
   import ru.ointeractive.andromeda.graphic.Graphic;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class ImageActivity extends AppCompatActivity {
     

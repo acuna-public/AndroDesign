@@ -2,35 +2,31 @@
   
   android {
     
-    compileSdkVersion 29
+    compileSdkVersion 28
     
     defaultConfig {
       
       minSdkVersion 11
-      versionName project.property ('libraryVersion')
-      
-    }
+	
+		}
     
     buildTypes {
       
       debug {
-        consumerProguardFiles 'proguard-rules.pro'
-      }
+				
+			}
       
       release {
         consumerProguardFiles 'proguard-rules.pro'
       }
       
     }
-    
-  }
+		
+	}
 	
-  apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/bintray.gradle'
-  apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/publish.gradle'
-  
   dependencies {
     
-    implementation fileTree (include: ['*.jar'], dir: 'libs')
+    api fileTree (include: ['*.jar', '*.aar'], dir: 'libs')
 		
     api 'com.android.support:support-v4:28.0.0'
     api 'com.android.support:recyclerview-v7:28.0.0'
@@ -41,7 +37,7 @@
     api 'com.github.clans:fab:1.6.4'
 		
     implementation 'com.larswerkman:HoloColorPicker:1.5'
-	
+		
 		//api 'ru.ointeractive:andromeda:+'
 		api project (':andromeda')
 		

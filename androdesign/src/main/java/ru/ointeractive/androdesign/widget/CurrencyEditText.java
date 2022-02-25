@@ -11,7 +11,7 @@
 	import android.widget.EditText;
 	
 	import ru.ointeractive.androdesign.R;
-	import ru.ointeractive.jabadaba.Int;
+	import upl.core.Int;
 	
 	public class CurrencyEditText extends AppCompatEditText {
 		

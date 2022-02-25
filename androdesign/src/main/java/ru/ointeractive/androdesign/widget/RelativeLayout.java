@@ -1,6 +1,6 @@
   package ru.ointeractive.androdesign.widget;
   /*
-   Created by Acuna on 25.02.2019
+   Created by Acuna on 04.12.2021
   */
   
   import android.content.Context;
@@ -12,11 +12,13 @@
   import java.io.IOException;
   import java.io.InputStream;
   
-  public class LinearLayout extends android.widget.LinearLayout {
+  import ru.ointeractive.andromeda.OS;
+  
+  public class RelativeLayout extends android.widget.RelativeLayout {
     
     public interface Listener {
       
-      void onView (LinearLayout layout);
+      void onView (RelativeLayout layout);
       
     }
     
@@ -26,15 +28,15 @@
       this.listener = listener;
     }
     
-    public LinearLayout (Context context) {
+    public RelativeLayout (Context context) {
       this (context, null);
     }
     
-    public LinearLayout (Context context, AttributeSet attrs) {
+    public RelativeLayout (Context context, AttributeSet attrs) {
       this (context, attrs, 0);
     }
     
-    public LinearLayout (Context context, AttributeSet attrs, int defStyle) {
+    public RelativeLayout (Context context, AttributeSet attrs, int defStyle) {
     	
       super (context, attrs, defStyle);
       
@@ -48,7 +50,7 @@
           else
             getViewTreeObserver ().removeOnGlobalLayoutListener (this);
           
-          if (listener != null) listener.onView (LinearLayout.this);
+          if (listener != null) listener.onView (RelativeLayout.this);
           
         }
         
@@ -63,7 +65,7 @@
     @Override
     public void setBackground (Drawable drawable) {
       
-      if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN)
+      if (OS.SDK < Build.VERSION_CODES.JELLY_BEAN)
         super.setBackgroundDrawable (drawable);
       else
         super.setBackground (drawable);

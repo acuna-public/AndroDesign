@@ -17,7 +17,7 @@
   import java.io.InputStream;
 
   import ru.ointeractive.andromeda.OS;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class TextView extends AppCompatTextView {
     

@@ -10,7 +10,7 @@
   import android.text.style.StyleSpan;
   import android.text.style.UnderlineSpan;
   
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class Strings {
     

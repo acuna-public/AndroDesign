@@ -1,11 +1,11 @@
 	package ru.ointeractive.androdesign.widget;
 	
 	import android.content.Context;
-	import android.content.res.ColorStateList;
 	import android.content.res.TypedArray;
 	import android.graphics.Color;
 	import android.graphics.drawable.Drawable;
 	import android.util.AttributeSet;
+	import android.view.Gravity;
 	import android.view.ViewGroup;
 	import android.widget.ImageView;
 	import android.widget.LinearLayout;
@@ -15,8 +15,7 @@
 	
 	public class DrawableTextView extends LinearLayout {
 		
-		private int mPadding = 10, mWidth = 30, mHeight = 30;
-		private float mTextSize = 15;
+		private int mPadding = 15, mWidth = 25, mHeight = 25, mTextSize = 15;
 		
 		private final ImageView imageView;
 		private final TextView textView;
@@ -33,20 +32,9 @@
 			
 			super (context, attrs, defStyle);
 			
-			setLayoutParams (new LayoutParams (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-			setOrientation (LinearLayout.HORIZONTAL);
-			
-			imageView = new ImageView (getContext ());
-			
-			imageView.setPadding (0, 0, mPadding, 0);
-			
-			imageView.setLayoutParams (new LayoutParams (mWidth, mHeight));
-			
-			addView (imageView);
-			
 			textView = new TextView (getContext ());
 			
-			addView (textView);
+			imageView = new ImageView (getContext ());
 			
 			TypedArray array = context.obtainStyledAttributes (attrs, R.styleable.DrawableTextView);
 			
@@ -57,23 +45,43 @@
 				if (attr == R.styleable.DrawableTextView_android_text)
 					setText (array.getText (attr).toString ());
 				else if (attr == R.styleable.DrawableTextView_android_textSize)
-					setTextSize (array.getDimension (attr, mTextSize));
+					setTextSize (array.getDimensionPixelSize (attr, mTextSize));
 				else if (attr == R.styleable.DrawableTextView_src)
 					setImage (array.getDrawable (attr));
 				else if (attr == R.styleable.DrawableTextView_android_textAppearance)
 					setTextAppearance (array.getResourceId (attr, 0));
 				else if (attr == R.styleable.DrawableTextView_android_textColor)
 					setTextColor (context.getResources ().getColor (array.getResourceId (attr, 0)));
+				else if (attr == R.styleable.DrawableTextView_imageWidth)
+					setImageWidth (array.getDimensionPixelSize (attr, mWidth));
+				else if (attr == R.styleable.DrawableTextView_imageHeight)
+					setImageHeight (array.getDimensionPixelSize (attr, mHeight));
 				
 			}
 			
 			array.recycle ();
+			
+			setLayoutParams (new LayoutParams (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+			setOrientation (LinearLayout.HORIZONTAL);
+			
+			LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams ((int) mWidth, (int) mHeight);
+			
+			layoutParams.gravity = Gravity.CENTER;
+			
+			imageView.setLayoutParams (layoutParams);
+			
+			addView (imageView);
+			
+			textView.setPadding ((int) mPadding, 0, 0, 0);
+			
+			addView (textView);
 			
 		}
 		
 		public DrawableTextView setText (CharSequence text) {
 			
 			textView.setText (text);
+			
 			return this;
 			
 		}
@@ -81,6 +89,7 @@
 		public DrawableTextView setTextSize (float size) {
 			
 			textView.setTextSize (size);
+			
 			return this;
 			
 		}
@@ -88,6 +97,7 @@
 		public DrawableTextView setTextColor (int color) {
 			
 			textView.setTextColor (color);
+			
 			return this;
 			
 		}
@@ -95,6 +105,7 @@
 		public DrawableTextView setImage (Drawable drawable) {
 			
 			imageView.setImageDrawable (drawable);
+			
 			return this;
 			
 		}
@@ -102,6 +113,7 @@
 		public DrawableTextView setTextAppearance (int res) {
 			
 			textView.setTextAppearance (getContext (), res);
+			
 			return this;
 			
 		}
@@ -123,6 +135,22 @@
 			};
 			
 			imageView.setColorFilter (color, android.graphics.PorterDuff.Mode.SRC_IN);
+			
+			return this;
+			
+		}
+		
+		public DrawableTextView setImageWidth (int width) {
+			
+			mWidth = width;
+			
+			return this;
+			
+		}
+		
+		public DrawableTextView setImageHeight (int height) {
+			
+			mHeight = height;
 			
 			return this;
 			

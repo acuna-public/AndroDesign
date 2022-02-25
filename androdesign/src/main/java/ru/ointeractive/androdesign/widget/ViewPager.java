@@ -38,7 +38,7 @@
   import java.util.Comparator;
   
   import ru.ointeractive.androdesign.adapter.ViewPagerAdapter;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class ViewPager extends ViewGroup {
     

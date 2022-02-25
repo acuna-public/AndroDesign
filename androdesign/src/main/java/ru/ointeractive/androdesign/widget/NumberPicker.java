@@ -13,6 +13,7 @@
 	import java.lang.reflect.Field;
 	
 	import ru.ointeractive.androdesign.R;
+	import upl.core.Log;
 	
 	public class NumberPicker extends android.widget.NumberPicker {
 		
@@ -62,8 +63,8 @@
 					setWrapSelectorWheel (a.getBoolean (attr, wrapSelectorWheel));
 				else if (attr == R.styleable.NumberPicker_enabled)
 					setEnabled (a.getBoolean (attr, enabled));
-				else if (attr == R.styleable.NumberPicker_android_text)
-					setText (a.getText (attr).toString (), a.getInt (R.styleable.NumberPicker_num, 3));
+				else if (attr == R.styleable.NumberPicker_text)
+					setText (a.getText (attr).toString (), 1);
 				
 			}
 			
@@ -74,10 +75,10 @@
 			
 			try {
 				
-				Field f = android.widget.NumberPicker.class.getDeclaredField ("mInputText");
-				f.setAccessible (true);
+				Field field = android.widget.NumberPicker.class.getDeclaredField ("mInputText");
+				field.setAccessible (true);
 				
-				EditText inputText = (EditText) f.get (this);
+				EditText inputText = (EditText) field.get (this);
 				inputText.setFilters (new InputFilter[0]);
 				
 			} catch (NoSuchFieldException | IllegalAccessException | IllegalArgumentException e) {
@@ -292,6 +293,19 @@
 			
 			for (int i = 0; i < num; i++)
 				values[i] = text;
+			
+			setDisplayedValues (values);
+			
+			return this;
+			
+		}
+		
+		public NumberPicker setDisplayedValues (int[] vals) {
+			
+			String[] values = new String[vals.length];
+			
+			for (int i = 0; i < vals.length; i++)
+				values[i] = String.valueOf (vals[i]);
 			
 			setDisplayedValues (values);
 			

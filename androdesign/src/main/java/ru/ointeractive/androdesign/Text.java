@@ -16,13 +16,13 @@
   import android.text.style.StyleSpan;
   import android.text.style.TypefaceSpan;
   
-  import org.json.JSONArray;
-  import org.json.JSONException;
-  import org.json.JSONObject;
+  import upl.json.JSONArray;
+  import upl.json.JSONException;
+  import upl.json.JSONObject;
   import org.jsoup.nodes.Element;
 
   import ru.ointeractive.andromeda.Arrays;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class Text {
     

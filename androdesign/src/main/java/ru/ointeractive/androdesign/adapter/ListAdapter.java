@@ -17,7 +17,7 @@
   import java.util.Map;
   
   import ru.ointeractive.androdesign.widget.ListItem;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     

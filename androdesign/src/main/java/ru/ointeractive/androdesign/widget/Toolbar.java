@@ -6,6 +6,7 @@
   import android.app.Activity;
   import android.content.Context;
   import android.content.ContextWrapper;
+  import android.content.res.TypedArray;
   import android.graphics.Bitmap;
   import android.graphics.drawable.Drawable;
   import android.support.design.widget.AppBarLayout;
@@ -21,7 +22,7 @@
 
   import ru.ointeractive.androdesign.R;
   import ru.ointeractive.andromeda.graphic.Graphic;
-  import ru.ointeractive.jabadaba.exceptions.OutOfMemoryException;
+  import upl.core.exceptions.OutOfMemoryException;
 
   public class Toolbar extends android.support.v7.widget.Toolbar {
     
@@ -50,6 +51,21 @@
 	    
 	    if (cActivity != null)
 		    cActivity.setSupportActionBar (this);
+	    
+	    TypedArray array = context.obtainStyledAttributes (attrs, R.styleable.Toolbar);
+	    
+	    for (int i = 0; i < array.getIndexCount (); ++i) {
+	    	
+		    int attr = array.getIndex (i);
+		    
+		    //if (attr == R.styleable.Toolbar_title)
+			  //  setTitle (array.getText (attr).toString ());
+		    //else if (attr == R.styleable.Toolbar_description)
+			  //  setDescription (array.getText (attr).toString ());
+		   
+	    }
+	    
+	    array.recycle ();
 	    
     }
     

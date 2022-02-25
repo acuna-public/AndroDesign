@@ -1,10 +1,9 @@
 	package ru.ointeractive.androdesign.widget;
-	  /*
-	   Created by Acuna on 21.01.2019
-	  */
+  /*
+   Created by Acuna on 21.01.2019
+  */
 	
 	import android.content.Context;
-	import android.support.v4.view.ViewCompat;
 	import android.util.AttributeSet;
 	import android.view.View;
 	import android.view.ViewGroup;

@@ -23,7 +23,7 @@
   
   import ru.ointeractive.androdesign.R;
   import ru.ointeractive.androdesign.widget.ListItem;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> {
     

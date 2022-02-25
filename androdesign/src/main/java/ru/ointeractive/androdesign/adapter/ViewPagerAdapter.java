@@ -11,7 +11,7 @@
   import java.util.ArrayList;
   import java.util.List;
   
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
   
   public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     

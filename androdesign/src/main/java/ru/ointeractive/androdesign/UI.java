@@ -34,26 +34,24 @@
   import com.larswerkman.holocolorpicker.ColorPicker;
   import com.larswerkman.holocolorpicker.SaturationBar;
   import com.larswerkman.holocolorpicker.ValueBar;
-  
-  import java.io.File;
-  import java.util.ArrayList;
-  import java.util.List;
-  import java.util.Map;
-  
+
   import ru.ointeractive.androdesign.widget.ListItem;
   import ru.ointeractive.andromeda.apps.AppsManager;
   import ru.ointeractive.andromeda.Device;
   import ru.ointeractive.andromeda.OS;
   import ru.ointeractive.andromeda.System;
-  import ru.ointeractive.jabadaba.Arrays;
-  import ru.ointeractive.jabadaba.Console;
-  import ru.ointeractive.jabadaba.Files;
-  import ru.ointeractive.jabadaba.Int;
-  import ru.ointeractive.jabadaba.Log;
-  import ru.ointeractive.jabadaba.Net;
-  import ru.ointeractive.jabadaba.exceptions.HttpRequestException;
-  import ru.ointeractive.jabadaba.exceptions.OutOfMemoryException;
-  
+  import upl.core.Arrays;
+  import upl.core.File;
+  import upl.core.Int;
+  import upl.core.Log;
+  import upl.core.Net;
+  import upl.core.exceptions.ConsoleException;
+  import upl.core.exceptions.HttpRequestException;
+  import upl.core.exceptions.OutOfMemoryException;
+  import upl.util.ArrayList;
+  import upl.util.List;
+  import upl.util.Map;
+
   public class UI {
       
       /*public static void debug (Activity activity, String msg) {
@@ -291,10 +289,10 @@
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, List<?> items, DialogPosInterface listener, int posButtonTitle) {
-      return dialog (activity, style, title, Arrays.implode (items), listener, posButtonTitle);
+      return dialog (activity, style, title, items.implode (), listener, posButtonTitle);
     }
     
-    public static AlertDialog dialog (Activity activity, int style, int title, Object text, DialogPosInterface listener, int posButtonTitle) {
+	  public static AlertDialog dialog (Activity activity, int style, int title, Object text, DialogPosInterface listener, int posButtonTitle) {
       return dialog (activity, style, UI.toString (activity, title), text, listener, posButtonTitle);
     }
     
@@ -312,7 +310,7 @@
       if (text instanceof CharSequence)
         builder.setMessage ((CharSequence) text);
       else if (text instanceof List)
-        builder.setMessage (ru.ointeractive.jabadaba.System.debug ((List<?>) text));
+        builder.setMessage (upl.core.System.debug ((List<?>) text));
       else
         builder.setMessage (String.valueOf (text));
       
@@ -365,7 +363,7 @@
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, List<?> items, DialogNegInterface listener, int posButtonTitle, int negButtonTitle) {
-      return dialog (activity, style, title, Arrays.implode (items), listener, posButtonTitle, negButtonTitle);
+      return dialog (activity, style, title, items.implode (), listener, posButtonTitle, negButtonTitle);
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, Object text, DialogNegInterface listener, int posButtonTitle, int negButtonTitle) {
@@ -564,7 +562,7 @@
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, List<?> items) {
-      return dialog (activity, style, title, Arrays.implode (items));
+      return dialog (activity, style, title, items.implode ());
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, Object text) {
@@ -735,7 +733,7 @@
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, int layout, List<?> items, DialogChoiseInterface listener) {
-      return dialog (activity, style, UI.toString (activity, title), layout, Arrays.toStringArray (items), listener);
+      return dialog (activity, style, UI.toString (activity, title), layout, items.toStringArray (), listener);
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, int layout, String[] items, DialogChoiseInterface listener) {
@@ -784,7 +782,7 @@
           
           try {
             Device.reboot ();
-          } catch (Console.ConsoleException e) {
+          } catch (ConsoleException e) {
             dialog (activity, style, title, System.error (activity, e));
           }
           
@@ -821,7 +819,7 @@
     
     public static void restoreDialog (final Activity activity, final int style, final int title, int message, final List<String> items, final boolean close) {
       
-      String strMessage = UI.toString (activity, message).replace ("%apps%", Arrays.implode (items));
+      String strMessage = UI.toString (activity, message).replace ("%apps%", items.implode ());
       
       dialog (activity, style, title, strMessage, new DialogNegInterface () {
         
@@ -973,11 +971,11 @@
     }
 	
 	  public static AlertDialog dialog (Activity activity, int style, int title, int layout, List<?> items, int selected, DialogChoiseInterface listener) {
-		  return dialog (activity, style, UI.toString (activity, title), layout, Arrays.toStringArray (items), selected, listener);
+		  return dialog (activity, style, UI.toString (activity, title), layout, items.toStringArray (), selected, listener);
 	  }
 	  
 	  public static AlertDialog dialog (Activity activity, int style, String title, int layout, List<?> items, int selected, DialogChoiseInterface listener) {
-      return dialog (activity, style, title, layout, Arrays.toStringArray (items), selected, listener);
+      return dialog (activity, style, title, layout, items.toStringArray (), selected, listener);
     }
     
     public static AlertDialog dialog (Activity activity, int style, int title, int layout, String[] items, int selected, DialogChoiseInterface listener) {
@@ -1013,27 +1011,8 @@
       
     }
     
-    public static void debug (Map<?, ?> items) {
-      OS.debug (_debug (items));
-    }
-    
-    public static void debug (Intent intent) {
-      debug (ru.ointeractive.andromeda.Arrays.toArray (intent));
-    }
-    
-    public static String _debug (Map<?, ?> items) {
-      
-      List<String> msg = new ArrayList<> ();
-      
-      for (Object key : items.keySet ())
-        msg.add (key + ": " + items.get (key));
-      
-      return ru.ointeractive.jabadaba.Arrays.implode (msg);
-      
-    }
-    
     public static void debug (Activity activity, Map<String, String> items) {
-      debug (activity, _debug (items));
+      debug (activity, Log.debug (items));
     }
     
     private static int dialogStyle () {
@@ -1053,7 +1032,7 @@
     }
     
     public static void debug (Activity activity, List<?> msg, String sep) {
-      dialog (activity, dialogStyle (), 0, Arrays.implode (sep, msg));
+      dialog (activity, dialogStyle (), 0, msg.implode (sep));
     }
     
     public interface DialogListInterface {
@@ -1331,8 +1310,8 @@
       protected void onProgressUpdate (Long... argv) {
         
         progress.setMessage (UI.toString (activity, mess)
-                               .replace ("%length%", Files.mksize (argv[0], "kb") + " kb")
-                               .replace ("%size%", Files.mksize (argv[1], "kb") + " kb"));
+                               .replace ("%length%", File.mksize (argv[0], "kb") + " kb")
+                               .replace ("%size%", File.mksize (argv[1], "kb") + " kb"));
         
         progress.setProgress ((int) Int.prop (argv[0], argv[1]));
         

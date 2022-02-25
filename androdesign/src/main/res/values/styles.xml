@@ -8,8 +8,6 @@
     <item name="popupTheme">@style/PopupStyle</item>
     <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextSmall</item>
     <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextLarge</item>
-    <item name="android:textColorPrimary">@android:color/white</item>
-    <item name="android:textColorSecondary">@android:color/white</item>
     <item name="autoCompleteTextViewStyle">@style/Search</item>
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary_dark</item>

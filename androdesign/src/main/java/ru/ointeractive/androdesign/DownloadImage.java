@@ -15,9 +15,9 @@
   
   import ru.ointeractive.androdesign.adapter.ImagesAdapter;
   import ru.ointeractive.andromeda.graphic.Graphic;
-  import ru.ointeractive.jabadaba.Int;
-  import ru.ointeractive.jabadaba.exceptions.HttpRequestException;
-  import ru.ointeractive.jabadaba.exceptions.OutOfMemoryException;
+  import upl.core.Int;
+  import upl.core.exceptions.HttpRequestException;
+  import upl.core.exceptions.OutOfMemoryException;
   
   public class DownloadImage extends AsyncTask<String, Integer, Bitmap> {
     

@@ -5,12 +5,12 @@
   
   import android.graphics.Bitmap;
  
-  import org.json.JSONArray;
-  import org.json.JSONException;
-  import org.json.JSONObject;
+  import upl.json.JSONArray;
+  import upl.json.JSONException;
+  import upl.json.JSONObject;
   
-  import ru.ointeractive.jabadaba.Arrays;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Arrays;
+  import upl.core.Int;
   
   public class ListItem {
     
@@ -147,7 +147,7 @@
       if (JSONArrayParams != null)
         JSONArrayParams.put (id, value);
       else if (JSONObjParams != null)
-        JSONObjParams.put (Arrays.getKey (id, JSONObjParams), value);
+        JSONObjParams.put (JSONObjParams.getKey (id), value);
       else
         params[id] = value;
       
@@ -160,7 +160,7 @@
         if (JSONArrayParams != null)
           return String.valueOf (JSONArrayParams.get (id));
         else if (JSONObjParams != null)
-          return String.valueOf (JSONObjParams.get (Arrays.getKey (id, JSONObjParams)));
+          return String.valueOf (JSONObjParams.get (JSONObjParams.getKey (id)));
         else
           return params[id];
         

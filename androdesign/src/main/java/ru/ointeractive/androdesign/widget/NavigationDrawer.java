@@ -28,7 +28,7 @@
   import java.util.Map;
 	
   import ru.ointeractive.andromeda.graphic.Graphic;
-  import ru.ointeractive.jabadaba.Int;
+  import upl.core.Int;
 	
   public class NavigationDrawer {
     

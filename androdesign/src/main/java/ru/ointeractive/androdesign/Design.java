@@ -1,19 +1,43 @@
 	package ru.ointeractive.androdesign;
 	
-	import android.app.Activity;
-	import android.app.Fragment;
-	import android.app.FragmentTransaction;
+	import android.support.v4.app.Fragment;
+	import android.support.v4.app.FragmentActivity;
+	import android.support.v4.app.FragmentTransaction;
 	
 	public class Design {
 		
-		public static FragmentTransaction fragmentReplace (Activity activity, int container, Fragment fragment) {
+		public static FragmentTransaction fragmentReplace (FragmentActivity activity, int container, Fragment fragment) {
 			
-			FragmentTransaction fragmentTransaction = activity.getFragmentManager ().beginTransaction ();
-			fragmentTransaction.replace (container, fragment);
+			FragmentTransaction ft = activity.getSupportFragmentManager ().beginTransaction ();
 			
-			fragmentTransaction.commitAllowingStateLoss ();
+			ft.replace (container, fragment);
+			ft.commitAllowingStateLoss ();
 			
-			return fragmentTransaction;
+			return ft;
+			
+		}
+		
+		public static FragmentTransaction fragmentRecreate (FragmentActivity activity, int container, Fragment fragment) throws IllegalAccessException, InstantiationException {
+			
+			FragmentTransaction ft = activity.getSupportFragmentManager ().beginTransaction ();
+			
+			ft.remove (fragment);
+			Fragment newInstance = recreateFragment (activity, fragment);
+			ft.add (container, newInstance);
+			ft.commit ();
+			
+			return ft;
+			
+		}
+		
+		private static Fragment recreateFragment (FragmentActivity activity, Fragment f) throws InstantiationException, IllegalAccessException {
+			
+			Fragment.SavedState savedState = activity.getSupportFragmentManager ().saveFragmentInstanceState(f);
+			
+			Fragment newInstance = f.getClass().newInstance();
+			newInstance.setInitialSavedState(savedState);
+			
+			return newInstance;
 			
 		}
 		
