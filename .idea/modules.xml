@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroDesign.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroDesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/androdesign/AndroDesign.androdesign.iml" filepath="$PROJECT_DIR$/.idea/modules/androdesign/AndroDesign.androdesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-862011321/AndroDesign.andromeda.iml" filepath="$PROJECT_DIR$/.idea/modules/-862011321/AndroDesign.andromeda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/640214197/AndroDesign.upl.iml" filepath="$PROJECT_DIR$/.idea/modules/640214197/AndroDesign.upl.iml" />
     </modules>
   </component>
 </project>

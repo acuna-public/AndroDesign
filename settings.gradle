@@ -1,1 +1,4 @@
-  include ':androdesign'
+  include ':androdesign', ':upl', ':andromeda'
+
+	project (':upl').projectDir = new File ('D:\\Projects\\IntelliJ\\Idea\\UPL\\Core\\core')
+	project (':andromeda').projectDir = new File ('D:\\Projects\\AndroidStudio\\Libraries\\Andromeda\\andromeda')

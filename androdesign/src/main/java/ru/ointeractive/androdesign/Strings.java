@@ -9,12 +9,15 @@
   import android.text.Spanned;
   import android.text.style.StyleSpan;
   import android.text.style.UnderlineSpan;
-  
+
+  import java.io.IOException;
+
   import upl.core.Int;
-  
+  import upl.core.exceptions.OutOfMemoryException;
+
   public class Strings {
     
-    public static String toString (Drawable image) {
+    public static String toString (Drawable image) throws IOException, OutOfMemoryException {
       return ru.ointeractive.andromeda.Strings.toString (Graphic.toBitmap (image));
     }
     

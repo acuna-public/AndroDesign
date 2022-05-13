@@ -38,6 +38,8 @@
 		
     implementation 'com.larswerkman:HoloColorPicker:1.5'
 		
+		api 'org.jsoup:jsoup:1.13.1'
+		
 		//api 'ru.ointeractive:andromeda:+'
 		api project (':andromeda')
 		
